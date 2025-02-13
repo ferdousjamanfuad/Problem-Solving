@@ -3,17 +3,20 @@ using namespace std;
 int main()
 {
     long long int n;
+    int count = 0;
     cin >> n;
     do
     {
         int rem = n % 10;
-        if (rem != 4 && rem != 7)
+        if (rem == 4 || rem == 7)
         {
-            cout << "NO";
-            return 0;
+            count++;
         }
         n = n / 10;
     } while (n > 0);
-    cout << "YES";
+    if (count == 7 || count == 4)
+        cout << "YES";
+    else
+        cout << "NO";
     return 0;
 }
