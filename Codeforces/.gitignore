@@ -1,5 +1,6 @@
-*.exe
 *.o
 .cph
 *.bin
 .DS_Store
+*.bin
+*.exec
